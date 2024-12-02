@@ -9,14 +9,14 @@ function Nav() {
         position: 'sticky',
         top: 0,
         zIndex: 1000,
-        background: ' #222',
+        background: '#222',
       }}
     >
       <div className="container">
         {/* Text Logo */}
         <Link
           className="navbar-brand"
-          to="/"  // Changed to direct to "/"
+          to="/"
           style={{ color: '#3498DB', fontSize: '24px', fontWeight: 'bold' }}
         >
           My Portfolio
@@ -29,9 +29,20 @@ function Nav() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{ backgroundColor: '#2980B9' }}
+          style={{
+            border: 'none',
+          }}
         >
-          <span className="navbar-toggler-icon" style={{ color: '#FFFFFF' }}></span>
+          <span
+            className="navbar-toggler-icon"
+            style={{
+              backgroundImage:
+                'url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28255, 255, 255, 0.8%29%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e")',
+              backgroundSize: 'contain',
+              width: '30px',
+              height: '30px',
+            }}
+          ></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
@@ -40,20 +51,20 @@ function Nav() {
               <li className="nav-item" key={item}>
                 <Link
                   className="nav-link"
-                  to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}  // Link to "/" for Home, others use lowercase path
+                  to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                   style={{
-                    color: '#b3cde3',  // Default light blue-gray color
+                    color: '#b3cde3',
                     position: 'relative',
                     padding: '0 8px',
                     transition: 'color 0.3s ease, border-bottom 0.3s ease',
                   }}
                   onMouseOver={(e) => {
-                    e.target.style.color = '#00FFFF';  // Cyan text color on hover
-                    e.target.style.borderBottom = '2px solid #00FFFF';  // Cyan underline
+                    e.target.style.color = '#00FFFF';
+                    e.target.style.borderBottom = '2px solid #00FFFF';
                   }}
                   onMouseOut={(e) => {
-                    e.target.style.color = '#b3cde3';  // Return to default color
-                    e.target.style.borderBottom = 'none';  // Remove underline
+                    e.target.style.color = '#b3cde3';
+                    e.target.style.borderBottom = 'none';
                   }}
                 >
                   {item}
@@ -68,4 +79,3 @@ function Nav() {
 }
 
 export default Nav;
-
