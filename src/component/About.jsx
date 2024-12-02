@@ -8,7 +8,7 @@ import c from '../assets/image/c.png';
 import sql from '../assets/image/mysql.png';
 import react from '../assets/image/react.png';
 import bootstrap from '../assets/image/bootstrap.png';
-import Tailwind from '../assets/image/Tailwind CSS.png';
+import Tailwind from '../assets/image/Tailwind CSS.png'; 
 
 function About() {
   const skills = [
