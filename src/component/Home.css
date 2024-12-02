@@ -1,0 +1,10 @@
+/* App.css */
+.social-icon {
+    transition: all 0.3s ease; /* Smooth transition for all effects */
+  }
+  
+  .social-icon:hover {
+    color: #00bcd4; /* Cyan color on hover */
+    text-decoration: underline; /* Underline effect */
+  }
+  
