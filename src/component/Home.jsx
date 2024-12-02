@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import image from '../assets/image/image.png'; // Correct path to your image
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -36,8 +37,8 @@ const Home = () => {
             <h1 className="display-4 fw-bold">Hi, I'm Krishna More</h1>
             <h2 className="lead">A Web Developer Specializing in Modern Web Technologies</h2>
             <p className="mt-3">I create beautiful, responsive, and high-performing websites to bring your ideas to life.</p>
-            <a href="/projects" className="btn btn-primary mt-4 me-2">View My Work</a>
-            <a href="/contact" className="btn btn-outline-light mt-4">Contact Me</a>
+            <Link to="/projects" className="btn btn-primary mt-4 me-2">View My Work</Link>
+            <Link to="/contact" className="btn btn-outline-light mt-4">Contact Me</Link>
 
             {/* Social Media Icons with Bootstrap Hover Effect */}
             <div className="social-icons mt-4">
