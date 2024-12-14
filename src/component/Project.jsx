@@ -28,7 +28,7 @@ function Project() {
       title: 'Crypto App',
       description: 'A cryptocurrency tracking app that provides real-time data using the CoinGecko API.',
       technologies: ['React', 'Redux Toolkit', 'Tailwind CSS', 'CoinGecko API'],
-      liveDemo: 'https://crypto-rjawm0jm8-krishnamore19s-projects.vercel.app/', // Replace with your actual live demo link
+      liveDemo: 'https://crypto-six-self.vercel.app/', // Replace with your actual live demo link
       github: 'https://github.com/KrishnaMore19/travel-app', // Replace with your actual GitHub link
       screenshot: cryptoImage, // Use the imported image here
     },
