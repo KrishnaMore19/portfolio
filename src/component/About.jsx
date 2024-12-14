@@ -52,7 +52,7 @@ function About() {
                 <p className="card-text text-center mt-3">
                   I'm a passionate web developer with a keen interest in building dynamic and responsive websites. I love the process of problem-solving and bringing creative solutions to life with the latest technologies.
                   <br /><br />
-                  With experience in both front-end and back-end development, I aim to deliver seamless and intuitive user experiences. In my free time, I enjoy learning new programming languages, experimenting with new frameworks, and contributing to open-source projects.
+                  With experience in both front-end, I aim to deliver seamless and intuitive user experiences. In my free time, I enjoy learning new programming languages, experimenting with new frameworks, and contributing to open-source projects.
                 </p>
               </div>
             </div>
