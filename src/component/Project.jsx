@@ -4,6 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 // Import images correctly
 import weatherImage from '../assets/image/weather.png';
 import newsImage from '../assets/image/news.png';
+import cryptoImage from '../assets/image/Cr.png'; // Import the crypto project image
 
 function Project() {
   const projectData = [
@@ -13,7 +14,7 @@ function Project() {
       technologies: ['React', 'API', 'CSS'],
       liveDemo: 'https://weather-app-eight-delta-10.vercel.app/',
       github: 'https://github.com/KrishnaMore19/Projects/tree/main/Weather%20apps',
-      screenshot: weatherImage,  // Use the imported image here
+      screenshot: weatherImage, // Use the imported image here
     },
     {
       title: 'News App',
@@ -21,7 +22,15 @@ function Project() {
       technologies: ['React', 'API', 'Bootstrap'],
       liveDemo: 'https://newsapp.example.com',
       github: 'https://github.com/KrishnaMore19/Projects/tree/main/NewsApp',
-      screenshot: newsImage,  // Use the imported image here
+      screenshot: newsImage, // Use the imported image here
+    },
+    {
+      title: 'Crypto App',
+      description: 'A cryptocurrency tracking app that provides real-time data using the CoinGecko API.',
+      technologies: ['React', 'Redux Toolkit', 'Tailwind CSS', 'CoinGecko API'],
+      liveDemo: 'https://crypto-rjawm0jm8-krishnamore19s-projects.vercel.app/', // Replace with your actual live demo link
+      github: 'https://github.com/KrishnaMore19/travel-app', // Replace with your actual GitHub link
+      screenshot: cryptoImage, // Use the imported image here
     },
   ];
 
@@ -119,3 +128,4 @@ function Project() {
 }
 
 export default Project;
+
